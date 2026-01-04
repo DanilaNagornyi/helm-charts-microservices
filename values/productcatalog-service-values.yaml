@@ -1,9 +1,9 @@
 appName: productcatalogservice
-appImage: gcr.io/google-samples/microservices-demo/productcatalogservice
-appVersion: v0.8.0
+appImage: us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice
+appVersion: v0.10.4
 appReplicas: 2
 containerPort: 3550
-containerEnvVars: 
+containerEnvVars:
 - name: PORT
   value: "3550"
 - name: DISABLE_PROFILER

@@ -1,17 +1,17 @@
 appName: checkoutservice
-appImage: gcr.io/google-samples/microservices-demo/checkoutservice
-appVersion: v0.8.0
+appImage: us-central1-docker.pkg.dev/google-samples/microservices-demo/checkoutservice
+appVersion: v0.10.4
 appReplicas: 2
 containerPort: 5050
-containerEnvVars: 
+containerEnvVars:
   - name: PORT
     value: "5050"
-  - name: PRODUCT_CATALOG_SERVICE_ADDR   
+  - name: PRODUCT_CATALOG_SERVICE_ADDR
     value: "productcatalogservice:3550"
   - name: SHIPPING_SERVICE_ADDR
     value: "shippingservice:50051"
   - name: PAYMENT_SERVICE_ADDR
-    value: "paymentservice:50051"    
+    value: "paymentservice:50051"
   - name: EMAIL_SERVICE_ADDR
     value: "emailservice:5000"
   - name: CURRENCY_SERVICE_ADDR

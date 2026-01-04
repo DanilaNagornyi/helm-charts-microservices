@@ -1,9 +1,9 @@
 appName: frontend
-appImage: gcr.io/google-samples/microservices-demo/frontend
-appVersion: v0.8.0
+appImage: us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend
+appVersion: v0.10.4
 appReplicas: 2
 containerPort: 8080
-containerEnvVars: 
+containerEnvVars:
 - name: PORT
   value: "8080"
 - name: PRODUCT_CATALOG_SERVICE_ADDR
@@ -20,6 +20,8 @@ containerEnvVars:
   value: "checkoutservice:5050"
 - name: AD_SERVICE_ADDR
   value: "adservice:955"
+- name: SHOPPING_ASSISTANT_SERVICE_ADDR
+  value: "shoppingassistantservice:80"
 
 servicePort: 80
 serviceType: LoadBalancer

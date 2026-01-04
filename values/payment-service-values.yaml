@@ -1,9 +1,9 @@
 appName: paymentservice
-appImage: gcr.io/google-samples/microservices-demo/paymentservice
-appVersion: v0.8.0
+appImage: us-central1-docker.pkg.dev/google-samples/microservices-demo/paymentservice
+appVersion: v0.10.4
 appReplicas: 2
 containerPort: 50051
-containerEnvVars: 
+containerEnvVars:
 - name: PORT
   value: "50051"
 - name: DISABLE_PROFILER
